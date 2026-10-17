@@ -46,6 +46,17 @@ server.listen(0, '127.0.0.1', async () => {
   await page.screenshot({ path: path.join(__dirname, 'screenshot-1-monograph-4p.png'), fullPage: true });
   console.log('Saved screenshot-1-monograph-4p.png');
 
+  // Switch to 4p Multiplier tab & trigger max 9^20 stress test
+  await page.click('.model-tab[data-model="mult4p"]');
+  await page.click('#btn-stress-carry');
+  await sleep(250);
+
+  // Exercise Omega-rANS compressor and ARC-ZERO interactive task selector
+  await page.click('#btn-run-compress');
+  await sleep(150);
+  await page.click('#arc-task-tabs .model-tab[data-arc="1"]');
+  await sleep(150);
+
   // Switch to 28p Trained tab & trigger stress carry test
   await page.click('.model-tab[data-model="28p"]');
   await page.click('#btn-stress-carry');

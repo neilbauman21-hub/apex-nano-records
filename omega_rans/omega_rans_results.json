@@ -1,0 +1,78 @@
+{
+  "aggregate_bytes": {
+    "raw": 59490,
+    "gzip_9": 14610,
+    "bzip2_9": 14282,
+    "xz_9e": 14300,
+    "omega_rans": 13531
+  },
+  "aggregate_bpb": {
+    "gzip9_bpb": 1.9647,
+    "bzip2_9_bpb": 1.9206,
+    "xz_9e_bpb": 1.923,
+    "omega_rans_bpb": 1.8196
+  },
+  "stored_weight_bytes": 0,
+  "corpora": [
+    {
+      "corpus": "Tiny800 Held-Out Curriculum A (16KB)",
+      "raw_bytes": 16384,
+      "gzip9_bytes": 3724,
+      "bzip2_9_bytes": 3579,
+      "xz_9e_bytes": 3640,
+      "omega_rans_bytes": 3353,
+      "gzip9_bpb": 1.8184,
+      "bzip2_9_bpb": 1.7476,
+      "xz_9e_bpb": 1.7773,
+      "omega_rans_bpb": 1.6372,
+      "stored_model_weight_bytes": 0,
+      "sha256_verified": "ad95678855",
+      "encode_seconds": 2.781
+    },
+    {
+      "corpus": "Tiny800 Held-Out Curriculum B (16KB)",
+      "raw_bytes": 16384,
+      "gzip9_bytes": 3590,
+      "bzip2_9_bytes": 3428,
+      "xz_9e_bytes": 3528,
+      "omega_rans_bytes": 3300,
+      "gzip9_bpb": 1.7529,
+      "bzip2_9_bpb": 1.6738,
+      "xz_9e_bpb": 1.7227,
+      "omega_rans_bpb": 1.6113,
+      "stored_model_weight_bytes": 0,
+      "sha256_verified": "818647c3a7",
+      "encode_seconds": 2.82
+    },
+    {
+      "corpus": "Tiny800 Held-Out Curriculum C (16KB)",
+      "raw_bytes": 16384,
+      "gzip9_bytes": 3675,
+      "bzip2_9_bytes": 3504,
+      "xz_9e_bytes": 3608,
+      "omega_rans_bytes": 3292,
+      "gzip9_bpb": 1.7944,
+      "bzip2_9_bpb": 1.7109,
+      "xz_9e_bpb": 1.7617,
+      "omega_rans_bpb": 1.6074,
+      "stored_model_weight_bytes": 0,
+      "sha256_verified": "90aeb326aa",
+      "encode_seconds": 4.23
+    },
+    {
+      "corpus": "Mathematical Monograph & Proofs",
+      "raw_bytes": 10338,
+      "gzip9_bytes": 3621,
+      "bzip2_9_bytes": 3771,
+      "xz_9e_bytes": 3524,
+      "omega_rans_bytes": 3586,
+      "gzip9_bpb": 2.8021,
+      "bzip2_9_bpb": 2.9182,
+      "xz_9e_bpb": 2.727,
+      "omega_rans_bpb": 2.775,
+      "stored_model_weight_bytes": 0,
+      "sha256_verified": "a0ab34872a",
+      "encode_seconds": 1.518
+    }
+  ]
+}

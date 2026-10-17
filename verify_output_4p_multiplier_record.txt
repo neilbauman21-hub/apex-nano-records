@@ -1,0 +1,20 @@
+Model: APEX-Mult-4p (Coupled Bilinear SwiGLU + Sink-Normalized Carry Linearization)
+Author: Neil (APEX // NANO-RECORDS)
+Parameters (unique): 4
+Architecture: 2-Layer Causal Decoder, d=2, 10h RoPE/Lag Convolution + 1h Sink-Normalized Geometric Carry + 2-Stage Radix-10 SwiGLU
+Tricks: Bit-exact IEEE-754 SwiGLU bilinear digit product: (SiLU(w0(a+1))b - SiLU(w0)b)/w0 == a*b, Constant-lag (10+k) causal attention convolution routing, Autoregressive Carry Linearization: c_m = sum_{r>=1} 10^{-r}(S_{m-r} - p_{m-r}), Geometric Softmax Sink Identity: sum_{d=0}^m 10^{-d} + (1/9)10^{-m} == 10/9 (constant softmax denominator), Two-stage radix-10 SwiGLU carry cascade (mod 100 -> mod 10) + tied parabolic readout
+
+  Progress: 1000/10010 (1000/1000 correct) [9.0s]
+  Progress: 2000/10010 (2000/2000 correct) [18.1s]
+  Progress: 3000/10010 (3000/3000 correct) [27.2s]
+  Progress: 4000/10010 (4000/4000 correct) [36.0s]
+  Progress: 5000/10010 (5000/5000 correct) [45.3s]
+  Progress: 6000/10010 (6000/6000 correct) [54.9s]
+  Progress: 7000/10010 (7000/7000 correct) [64.5s]
+  Progress: 8000/10010 (8000/8000 correct) [73.8s]
+  Progress: 9000/10010 (9000/9000 correct) [83.4s]
+  Progress: 10000/10010 (10000/10000 correct) [93.5s]
+
+Results: 10010/10010 correct (100.00%)
+Time: 93.6s (107 multiplications/sec)
+Status: QUALIFIED (threshold: 99%)
