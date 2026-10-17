@@ -1,0 +1,20 @@
+Model: Apex-34P Gauge-Reduced Trained Qwen3 Addition Transformer
+Author: Neil & Antigravity
+Parameters (unique): 34
+Architecture: 1-layer Qwen3 Decoder-only Transformer, d=3, 1h (dim 4), SwiGLU MLP, projective RMSNorm gauge reduction
+Tricks: Input-side RMSNorm homogeneity gauge reduction (fixes circular-arc radius A ≡ 1), Projective RMSNorm weight gauge reduction (fixes w_ln[0] ≡ 1, absorbing scale into Q/up/gate), 2-parameter unit circular-arc token embedding with tied LM head, Tied V=Q, O=Q^T, K=rot(Q, k_theta), down=rot(up^T, down_theta)
+
+  Progress: 1000/10010 (1000/1000 correct) [2.4s]
+  Progress: 2000/10010 (2000/2000 correct) [4.8s]
+  Progress: 3000/10010 (3000/3000 correct) [7.2s]
+  Progress: 4000/10010 (4000/4000 correct) [9.7s]
+  Progress: 5000/10010 (5000/5000 correct) [12.1s]
+  Progress: 6000/10010 (6000/6000 correct) [14.5s]
+  Progress: 7000/10010 (7000/7000 correct) [16.9s]
+  Progress: 8000/10010 (8000/8000 correct) [19.3s]
+  Progress: 9000/10010 (9000/9000 correct) [21.7s]
+  Progress: 10000/10010 (10000/10000 correct) [24.2s]
+
+Results: 10010/10010 correct (100.00%)
+Time: 24.2s (414 additions/sec)
+Status: QUALIFIED (threshold: 99%)

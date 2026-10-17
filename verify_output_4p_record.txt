@@ -1,0 +1,20 @@
+Model: Apex-4P Constructive Qwen-Adder
+Author: Neil / Apex-Nano-Records
+Parameters (unique): 4
+Architecture: 1L Qwen-derived autoregressive decoder, d=2, 1h, hd=2, ff=2 (coupled 1p quad embed + unit-residual carry hinge)
+Tricks: Coupled reciprocal quadratic embedding e(d)=[w0 - d^2/w0, -d] (1 param instead of 2), Unit-residual SwiGLU carry hinge (absorbs carry_w into gate scale, saving 1 param), RoPE period-19 digit routing, Tied embedding output head with projective scale elimination
+
+  Progress: 1000/10010 (1000/1000 correct) [2.9s]
+  Progress: 2000/10010 (2000/2000 correct) [5.8s]
+  Progress: 3000/10010 (3000/3000 correct) [8.6s]
+  Progress: 4000/10010 (4000/4000 correct) [11.5s]
+  Progress: 5000/10010 (5000/5000 correct) [14.4s]
+  Progress: 6000/10010 (6000/6000 correct) [17.3s]
+  Progress: 7000/10010 (7000/7000 correct) [20.1s]
+  Progress: 8000/10010 (8000/8000 correct) [23.0s]
+  Progress: 9000/10010 (9000/9000 correct) [25.9s]
+  Progress: 10000/10010 (10000/10000 correct) [28.7s]
+
+Results: 10010/10010 correct (100.00%)
+Time: 28.8s (348 additions/sec)
+Status: QUALIFIED (threshold: 99%)

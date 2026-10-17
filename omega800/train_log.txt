@@ -1,0 +1,11 @@
+Using device: mps
+Loaded train.bin (10,000,064 bytes) and val.bin (500,018 bytes)
+Verified Omega800KroneckerLM parameter count: 800 scalar parameters
+Step 0 (Init) | Val BPB: 7.9559 | Val Acc: 2.44%
+Step  100/600 (  3.3M tok,  12.6s) | Val BPB: 4.2042 | Val Acc: 36.42%
+Step  200/600 (  6.6M tok,  24.9s) | Val BPB: 3.8161 | Val Acc: 40.46%
+Step  300/600 (  9.8M tok,  37.2s) | Val BPB: 3.7418 | Val Acc: 40.25%
+Step  400/600 ( 13.1M tok,  51.1s) | Val BPB: 3.7102 | Val Acc: 41.80%
+Step  500/600 ( 16.4M tok,  64.3s) | Val BPB: 3.6983 | Val Acc: 41.56%
+Step  600/600 ( 19.7M tok,  77.0s) | Val BPB: 3.6935 | Val Acc: 41.45%
+Saved results to /Users/neilthepineapplegoat/.gemini/antigravity/scratch/apex-nano-records/omega800/omega800_results.json
